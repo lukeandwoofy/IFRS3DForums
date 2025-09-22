@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebFS2025 Forums</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>WebFS2025 Forums</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Search</a>
+                <a href="#">Login</a>
+                <a href="#">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="categories">
+            <h2>Main Categories</h2>
+            <div class="category">
+                <h3>Official WebFS2025</h3>
+                <p>Announcements, updates, and official support for WebFS2025 (latest version: 1.0.0).</p>
+                <a href="#official-threads">View Threads</a>
+            </div>
+            <div class="category">
+                <h3>Community Content Hangar</h3>
+                <p>Share screenshots, videos, tutorials, and events.</p>
+                <a href="#community-threads">View Threads</a>
+            </div>
+            <div class="category">
+                <h3>Discussion Hub</h3>
+                <p>Discuss features, mods, and third-party add-ons.</p>
+                <a href="#discussion-threads">View Threads</a>
+            </div>
+            <div class="category">
+                <h3>User Support Hub</h3>
+                <p>Ask for help with issues, bugs, and troubleshooting.</p>
+                <a href="#support-threads">View Threads</a>
+            </div>
+        </section>
+
+        <section id="official-threads" class="threads">
+            <h2>Official WebFS2025 Threads</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Topic</th>
+                        <th>Replies</th>
+                        <th>Last Reply</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fas fa-fire"></i></td>
+                        <td><a href="#">Welcome to WebFS2025!</a><br>Started by Admin.</td>
+                        <td>5</td>
+                        <td>Sep 22, 2025<br>By User1</td>
+                    </tr>
+                    <!-- Add more sample rows -->
+                </tbody>
+            </table>
+            <button onclick="showPostForm('official')">New Post</button>
+            <form id="official-form" class="post-form" style="display:none;">
+                <input type="text" placeholder="Title">
+                <textarea placeholder="Your message..."></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+
+        <!-- Repeat similar sections for other categories: community-threads, discussion-threads, support-threads -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 WebFS2025. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
